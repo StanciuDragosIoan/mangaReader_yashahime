@@ -18,12 +18,18 @@
     <img src="./yashahime/ch1/cover3.jpeg" alt="" />
     <img src="./yashahime/ch1/cover4.jpeg" alt="" />
     <img src="./yashahime/ch1/index.jpeg" alt="" />
-    <img src="./yashahime/ch1/1.jpeg" alt="" />
-    <img src="./yashahime/ch1/2.jpeg" alt="" />
-    <img src="./yashahime/ch1/3.jpeg" alt="" />
-    <img src="./yashahime/ch1/4.jpeg" alt="" />
-    <img src="./yashahime/ch1/5.jpeg" alt="" />
-    <img src="./yashahime/ch1/6.jpeg" alt="" />
+
+    <div id="pages"></div>
+
+    <script>
+      let output = "";
+
+      for (let i = 1; i <= 20; i++) {
+        output += ` <img src="./yashahime/ch1/${i}.jpeg" alt="" />`;
+      }
+
+      document.querySelector("#pages").innerHTML = output;
+    </script>
   </body>
 </html>
 
